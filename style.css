@@ -1,6 +1,6 @@
 body{
 	text-align: center;
-	color: lime;
+	color: blue;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -25,13 +25,13 @@ img{
 }
 h1{
       font-size: 3.5rem;
-      margin-top: 55px;
+      margin-top: 40px;
 }		
 button{
 	margin: 30px 10px;
 	padding: 10px 20px;
       border-radius: 15px;
-      font-size: 2.5rem;
+      font-size: 3rem;
 	border: 2px solid gray;
       display: block;
 }
