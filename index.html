@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulb</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="main">
+<img src="of.png" id="bulb" class="bulbimg">
+
+<div class="btns">
+   <button onclick="light(1)"> ON</button>
+   <button onclick="light(0)"> OFF</button>
+</div>
+<h1 style="text-align: center;" id="name"></h1>
+</div>	
+<script type="text/javascript">
+	// let name = prompt("enter your name");
+	let main = document.querySelector(".main");
+	function light(value){
+
+		var pic;
+		if (value == 0) {
+			pic = "of.png";
+			main.style.background = "black";
+			document.getElementById('name').style.display = "none";
+		}
+		else
+		{
+			pic = "on.png";
+			main.style.background = "white";
+			document.getElementById('name').textContent = "yash";
+			document.getElementById('name').style.display = "inline";
+		}
+		document.getElementById('bulb').src = pic;
+	}
+</script>
+</body>
+</html>
